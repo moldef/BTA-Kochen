@@ -19,14 +19,29 @@ ul {
   list-style: none;
 }
 
-nav {
+header nav {
   display: none;
 }
 
 .show{
     display: block;
+
     position: fixed;
     top: 64px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: calc(100vh - 64px);
+    text-align: center;
+    line-height: 3rem;
+}
+
+.show ul{
+    padding: 0;
+}
+
+.overflow{
+    overflow: hidden;
 }
 
 header {
@@ -78,24 +93,119 @@ button{
     border-color: #fff;
 
 }
+#rezepte{
+text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card p a{
+    color: #b2b2b2;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.button.button-blue{
+    color: #fff;
+    background-color: #374A67;
+    border-color: #fff;
+    margin: 1rem;
+    display: block;
+}
+
+.button.button-blue:hover{
+    color: #374a67;
+    background-color: #fff;
+    border-color: #374a67;
+}
+#Rezepte h2{
+    text-align: center;
+}
+
+#abo{
+    display: inline-block;
+}
+
+.end{
+    background-color: #04122B;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.end h2{
+      font-size: 1rem;
+      padding: 2rem;
+}
+
+.email{
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#social ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#social ul li{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+#legalcrap ul{
+    text-align: center;
+    padding: 0;
+}
+
 
 @media (min-width: 1024px) {
-  nav {
-    display: block;
-  }
 
-  button {
+  header button {
     display: none;
   }
 
   nav ul {
     display: flex;
   }
+
   nav li {
     margin-right: 16px;
   }
+
   header{
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  .row {
+      display: flex;
+}
+
+.card {
+    margin: 1rem;
+}
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%
 }
